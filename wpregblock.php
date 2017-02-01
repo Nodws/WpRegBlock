@@ -18,7 +18,7 @@ unset($tld[0]); //holds user@domain
  $bad = array('ru','nu','in','cn','ir','il','info','cc','tl','tk');
 
 // Check the mofo
- $block = array_intersect($as, $b);
+ $block = array_intersect($tld, $bad);
  if(!empty($block))
     exit('<h1>Error 403</h1>'); //Show an error or just blank
 
