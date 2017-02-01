@@ -24,5 +24,5 @@ unset($tld[0]); //holds user@domain
 
 //clear? proceed mlady 
  }
-add_action( 'register_post', 'wpRegBlock', 10, 3 );
+add_action( 'register_post', 'wpRegBlock', 3, 3 );
 ?>
